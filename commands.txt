@@ -1,1 +1,7 @@
 .c9/
+Create User using aws cognito-idp admin-create-user
+ aws cognito-idp admin-create-user --user-pool-id us-east-1_0rFQ4nrBQ --username mamadou --user-attributes Name=email,Value=nabitib935@digopm.com   --message-action SUPPRESS
+Signup while creating user with password
+ aws cognito-idp sign-up --client-id 4fa5hhc1ac0jurr65acfmde8ea --username mamadou1 --password Test1234@ --user-attributes Name="email",Value="nabitib935@digopm.com" 
+Confirm signup 
+ aws cognito-idp admin-confirm-sign-up --user-pool-id us-east-1_0rFQ4nrBQ --username mamadou1
